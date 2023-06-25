@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+}
+/* Logo et navbar */
+.logo img {
+  width: 150px;
+}
+.navbar {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.navbar ul li {
+  font-weight: 400;
+  margin-left: 50px;
+  font-size: 20px;
+  /* font-family: "Abril Fatface", sans-serif; */
+}
+/* Titre  */
+.Name h1 {
+  margin-top: 100px;
+  width: 400px;
+  margin-left: 100px;
+  color: white;
+  font-size: 60px;
+  font-weight: 200;
+  font-family: "Abril Fatface", sans-serif;
+}
+/* Services du magasin */
+.Services img {
+  width: 50px;
+  padding-bottom: 10px;
+}
+.Services {
+  margin: 50px 100px 70px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Services p {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+}
+.Services .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+/* Les ventes */
+.Ventes {
+  margin-bottom: 50px;
+  height: auto;
+}
+.Ventes h2 {
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.Ventes hr {
+  border: #add981;
+  background-color: #add981;
+  margin-left: 50px;
+  width: 30px;
+  height: 5px;
+  margin-bottom: 20px;
+}
+.best_plants {
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 150px 0 150px;
+}
+.plant_box {
+  position: relative;
+  height: 500px;
+  min-width: 250px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+.plant1 {
+  background-image: url("ventes/1.jpg");
+}
+.plant2 {
+  background-image: url("ventes/2.jpg");
+}
+.plant3 {
+  background-image: url("ventes/3.jpg");
+}
+.plant4 {
+  background-image: url("ventes/4.jpg");
+}
+
+/* Titre et prix des plantes */
+
+.plant_details {
+  position: absolute;
+  background-color: #ffffffdf;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+}
+.plant_name {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.plant_price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #add981;
+  padding-top: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.Ventes a {
+  text-decoration: none;
+}
+/* Bouton */
+.plant_box .button {
+  position: absolute;
+  color: white;
+  background-color: #add981;
+  width: 120px;
+  height: 20px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 15px;
+  bottom: 25px;
+  right: 30px;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.4);
+}
+.plant_box .btn {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/* Nos plantes titre */
+.plants_title {
+  margin: 50px;
+}
+
+.our_plants h2 {
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.plants_title hr {
+  border: #add981;
+  background-color: #add981;
+  margin-left: 50px;
+  width: 30px;
+  height: 5px;
+  margin-bottom: 20px;
+}
+
+/* Toutes les plantes */
+.plants_grid {
+  display: grid;
+  min-height: 150vh;
+  margin: 20px 200px 0 200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 300px);
+  grid-gap: 15px;
+}
+
+.plant_grid1 {
+  background-image: url("plantes/1.jpg");
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.plant_grid2 {
+  background-image: url("plantes/2.jpg");
+  grid-column: 3/5;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.plant_grid3 {
+  background-image: url("plantes/3.jpg");
+  grid-column: 3/5;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.plant_grid4 {
+  background-image: url("plantes/4.jpg");
+  grid-column: 1;
+  grid-row: 3/5;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.plant_grid5 {
+  background-image: url("plantes/5.jpg");
+  grid-column: 2/4;
+  grid-row: 3/5;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.plant_grid6 {
+  background-image: url("plantes/6.jpg");
+  grid-column: 4;
+  grid-row: 3/5;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.plants_grid .button {
+  position: absolute;
+  color: white;
+  background-color: #add981;
+  width: 120px;
+  height: 20px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 15px;
+  bottom: 25px;
+  right: 30px;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.4);
+}
+.plants_grid .btn {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/* Footer */
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 100px;
+  font-weight: 600;
+}
+footer .cgv {
+  text-decoration: none;
+  color: black;
+}
